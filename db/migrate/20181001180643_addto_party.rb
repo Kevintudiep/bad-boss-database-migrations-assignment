@@ -1,0 +1,14 @@
+class AddtoParty < ActiveRecord::Migration[5.2]
+  def change
+    change_table :party_guests do |t|
+      t.string :last_name
+      t.string :dietary_restrictions
+      t.integer :salary
+      t.integer :number_of_kids
+      t.string :vulnerabilities
+      t.integer :illnesses
+      t.string :medication
+      t.string :voting_preferences
+    end
+  end
+end
